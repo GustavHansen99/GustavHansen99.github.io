@@ -18,7 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: TheGustavHansen's awesome universe
+heading: Welcome to my github page
+subheading: Please feel free to take a look at some of my visualizations
 email: gustav5hansen5@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
