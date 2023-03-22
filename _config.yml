@@ -19,8 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: TheGustavHansen's awesome universe
-heading: Welcome to my github page
-subheading: Please feel free to take a look at some of my visualizations
 email: gustav5hansen5@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -32,11 +30,9 @@ twitter_username: "@TheGustavHansen"
 github_username:  GustavHansen99
 
 # Build settings
-remote_theme: "jeffreytse/jekyll-theme-yat"
-#theme: jekyll-theme-yat
+remote_theme: pages-themes/architect@v0.2.0
 plugins:
-  - jekyll-feed
-  - jekyll-theme-yat
+- jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
