@@ -6,3 +6,5 @@ categories: Social Data Viz
 ---
 
 something interesting
+
+<img src="/assets/Animation/dog_gif.html">
