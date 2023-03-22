@@ -530,19 +530,9 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-a.button medium {
-  display: block;
-  font-size: 13px;
-}
-header a.button1 {
+header a.button {
   position: absolute;
   top: 0;
-  right: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
-}
-header a.button2 {
-  position: absolute;
-  top: 58;
   right: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
