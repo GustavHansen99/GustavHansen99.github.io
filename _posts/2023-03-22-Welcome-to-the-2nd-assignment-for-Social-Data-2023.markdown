@@ -9,7 +9,6 @@ something interesting
 
 ![gif](/assets/gifs/dog.gif)
 
-<!DOCTYPE html>
 <html lang="en">
   
   <head>
