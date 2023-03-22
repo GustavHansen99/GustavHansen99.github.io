@@ -13,11 +13,14 @@ categories: Social Data Viz
 
 body
 
+Blablablab
 | <img src="/assets/images/assault_polar.jpg" width=400 height=300> | 
 |:--:| 
 | *Figure 1: Some text here* |
 
-| <img src="/assets/images/assault_map.jpg" style="display:block;float:none;margin-left:auto;margin-right:auto;width:60%" | 
+balbalbalan 
+
+| <img src="/assets/images/assault_map.jpg" width=400 height=300> | 
 |:--:| 
 | *Figure 2: Some text here* |
 
