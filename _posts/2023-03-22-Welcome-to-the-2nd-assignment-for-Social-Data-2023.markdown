@@ -10,7 +10,11 @@ something interesting
 ![gif](/assets/gifs/dog.gif)
 *This is some text for the dog gif figure*
 
-![polar](/assets/images/assault_polar.jpg)
+
+
+| ![polar](/assets/images/assault_polar.jpg) | 
+|:--:| 
+| *Figure 1: Some text here* |
 
 ![map](/assets/images/assault_map.jpg)
 
