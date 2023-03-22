@@ -7,4 +7,4 @@ categories: Social Data Viz
 
 something interesting
 
-<img src="/assets/dog.gif">
+<img src="../_assets/dog.gif">
