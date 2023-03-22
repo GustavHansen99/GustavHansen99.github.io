@@ -9,6 +9,8 @@ something interesting
 
 ![gif](/assets/gifs/dog.gif)
 
+![polar](/assets/images/assault_polar.jpg)
+
 <html lang="en">
   
   <head>
