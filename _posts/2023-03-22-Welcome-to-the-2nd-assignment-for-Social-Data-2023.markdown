@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  "Welcome to the 2nd assignment for Social Data 2023"
+title:  "2nd Assignment for Social Data 2023"
 date:   2023-03-22 12:25:55 +01:00
 categories: Social Data Viz
 ---
 
-# Header 1
+# Crime in San Francisco
 
 Welcome to our web page on the crime data set of San Francisco. This data set contains information on many different types of crimes in San Francisco, including the crime category, the location specified by latitude and longitude position, the day of the week, the time of the day etc. This data set spans several years, from 2003 to 2018. Therefore, several trends and patterns are identifiable and the data set can be used to provide a comprehensive overview of the crime trends in the city. 
-On the 28th of February 2023, two teens were arrested for assault near Dolores Park in San Francisco (https://www.cbsnews.com/sanfrancisco/news/sf-assault-2-teen-girls-on-scooters-arrested-18th-street-dolores-park/). This led to a substantial media coverage leading to news stories present in both CBS and ABC News among other.. According to officers, two people were assaulted by two teens, who rode into them on electric scooters. The suspects then got off the scooters and continued attacking the victims by punching them.
+## Header here to introduce the arrest
+On the 28th of February 2023, two teens were arrested for assault near Dolores Park in San Francisco ([article](https://www.cbsnews.com/sanfrancisco/news/sf-assault-2-teen-girls-on-scooters-arrested-18th-street-dolores-park/)). This led to a substantial media coverage leading to news stories present in both CBS and ABC News among other.. According to officers, two people were assaulted by two teens, who rode into them on electric scooters. The suspects then got off the scooters and continued attacking the victims by punching them.
 Considering this recent crime, we deem it interesting to analyse the data set and see the trends and patterns regarding assault crimes. By analysing the trends and patterns in assault crimes, we hope to provide the reader of this page with additional knowledge and ability to therefore make safer decisions in their life.
 To highlight this, we firstly draw attention towards the distribution of when in a 24-hour cycle the assaults most frequently take place in SF. This can be seen in Figure 1:
 
@@ -17,13 +18,18 @@ To highlight this, we firstly draw attention towards the distribution of when in
     <figcaption>Figure 1: Some text here</figcaption>
 </figure>
 
-One can see in Figure 1 that assault crimes are most popular during the evenings when the bars are much higher compared to the mornings. This means that if you must be cautious regarding assault crimes, you should be quick to get home from work since assault crimes tend to happen during the evenings. The assault crime, which occurred on the 28th of February 2023, happened at around 17:40, which is also during the evening. According to Figure 1, this is also where the assault crimes peak in counts. Another fascinating peak we show in the Figure is the peak around 12:00 - around lunch. You should also be cautious during this time.
+One can see in Figure 1 that assault crimes are most popular during the evenings when the bars are much higher compared to the mornings. This means that if you must be cautious regarding assault crimes, you should be quick to get home from work since assault crimes tend to happen during the evenings. The assault crime, which occurred on the 28th of February 2023, happened at around 17:40, which is also during the evening. According to Figure 1, this is also where the assault crimes peak in counts. Another fascinating peak we show in the figure is the peak at 12:00 - around lunch. You should also be cautious during this time.
+
+Knowing when assaults take place only offers half the story. How about where? In Figure 2, we present a map of San Francisco where one can see the exact position of each assault crime. **Note that only one month of the data set has been sampled to make this map. Otherwise, the map will contain assault crimes spanning 15 years’ worth of assault crimes, which would make the map very ugly**. However, all the other months of every year have also been drawn, and they all show the same tendency. In Figure 2, we highlight the location of the tragic incident that took place on the 28th of February 2023.
 
 <figure>
     <img src='/assets/images/assault_map.jpg' width=500 height=350 class="center">
     <figcaption>Figure 2: Some text here</figcaption>
 </figure>
 
+Now in Figure 2, we can clearly see the trends and patterns of where assault crimes happen. And they tend to happen quite often in the northeast part of San Francisco. This includes Tenderloin, Downtown and Mission. The assault crime, which happened on the 28th of February 2023 also happened in the northeast part of San Francisco, so this shows the same tendency. Now one can conclude both the when’s as well as the where’s of assault crimes in San Francisco. We note that the visualization is not normalised to the population sizes of the areas. Therefore, the map we show might be influenced by a confounding variable such as this, which could explain parts of the tendency. Nevertheless, the conclusions described still hold, specifically that the area in the northeast is more prone to assault crimes.
+
+However, maybe we don’t just want to look at assault crimes specifically. As previously mentioned, the crime data set of San Francisco provides data collected from many different categories of crime. Similar crimes to assault may be disorderly conduct or theft. Finally, we will then visualize an interactive Bokeh plot, where one can visualize the counts of different types of crimes regarding the hour. The viewer can choose to remove or add the crime category they want for this last visualization, which can be seen in Figure 3:
 
 <html lang="en">
   
@@ -105,3 +111,6 @@ One can see in Figure 1 that assault crimes are most popular during the evenings
   </body>
   
 </html>
+
+1. [CBS News Article](https://www.cbsnews.com/sanfrancisco/news/sf-assault-2-teen-girls-on-scooters-arrested-18th-street-dolores-park/)
+2. [ABC News Article](https://abc7news.com/sf-dolores-park-beating-arrest-teen-girls-arrested-scooter-attack-couple-attacked/12894504/)
