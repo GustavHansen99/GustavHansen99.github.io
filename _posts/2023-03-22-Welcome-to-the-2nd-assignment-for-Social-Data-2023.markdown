@@ -5,12 +5,13 @@ date:   2023-03-22 12:25:55 +01:00
 categories: Social Data Viz
 ---
 
-something interesting
+# Header 1
 
-![gif](/assets/gifs/dog.gif)
-*This is some text for the dog gif figure*
+## Header 2
 
+### Header 3
 
+body
 
 | ![polar](/assets/images/assault_polar.jpg) | 
 |:--:| 
