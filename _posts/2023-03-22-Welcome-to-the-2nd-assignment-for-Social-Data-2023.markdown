@@ -21,7 +21,7 @@ Blablablab \\
 balbalbalan \\
 
 <figure>
-    <img src='/assets/images/assault_polar.jpg' width=400 height=300> />
+    <img src='/assets/images/assault_polar.jpg' width=400 height=300 class="center">
     <figcaption>Figure 1: Some text here</figcaption>
 </figure>
 
