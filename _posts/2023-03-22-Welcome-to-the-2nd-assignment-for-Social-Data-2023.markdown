@@ -116,5 +116,5 @@ We would love to see what you come up with, so feel free to share it on Twitter 
 
 ### References
 
-1. [CBS News Article](https://www.cbsnews.com/sanfrancisco/news/sf-assault-2-teen-girls-on-scooters-arrested-18th-street-dolores-park/)
-2. [ABC News Article](https://abc7news.com/sf-dolores-park-beating-arrest-teen-girls-arrested-scooter-attack-couple-attacked/12894504/)
+1. [CBS News Article: 2 teens arrested in assault near San Francisco Dolores Park](https://www.cbsnews.com/sanfrancisco/news/sf-assault-2-teen-girls-on-scooters-arrested-18th-street-dolores-park/)
+2. [ABC News Article: 2 teen girls arrested in connection to scooter attack near SF's Dolores Park, police say](https://abc7news.com/sf-dolores-park-beating-arrest-teen-girls-arrested-scooter-attack-couple-attacked/12894504/)
