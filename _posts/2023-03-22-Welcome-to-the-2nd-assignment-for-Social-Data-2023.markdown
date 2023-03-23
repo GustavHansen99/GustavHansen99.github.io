@@ -27,6 +27,11 @@ Knowing when assaults take place only offers half the story. How about where? In
     <figcaption>Figure 2: Some text here</figcaption>
 </figure>
 
+<figure>
+    <img src='/assets/images/assault_map_heat.png' width=500 height=350 class="center">
+    <figcaption>Figure 2: Some text here</figcaption>
+</figure>
+
 Now in Figure 2, we can clearly see the trends and patterns of where assault crimes happen. And they tend to happen quite often in the northeast part of San Francisco. This includes Tenderloin, Downtown and Mission. The assault crime, which happened on the 28th of February 2023 also happened in the northeast part of San Francisco, so this shows the same tendency. Now one can conclude both the when’s as well as the where’s of assault crimes in San Francisco. We note that the visualization is not normalised to the population sizes of the areas. Therefore, the map we show might be influenced by a confounding variable such as this, which could explain parts of the tendency. Nevertheless, the conclusions described still hold, specifically that the area in the northeast is more prone to assault crimes.
 
 However, maybe we don’t just want to look at assault crimes specifically. As previously mentioned, the crime data set of San Francisco provides data collected from many different categories of crime. Similar crimes to assault may be disorderly conduct or theft. Finally, we will then visualize an interactive Bokeh plot, where one can visualize the counts of different types of crimes regarding the hour. The viewer can choose to remove or add the crime category they want for this last visualization, which can be seen in Figure 3:
