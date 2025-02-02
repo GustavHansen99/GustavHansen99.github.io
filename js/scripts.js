@@ -1,15 +1,3 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the scripts associated with the single-page
-    portfolio website.
-*/
-
 (function($) {
 
     // Show current year
@@ -96,5 +84,128 @@
             $('#more-projects').fadeIn(300);
         });
     });
+
+    // Social Media Links Data
+    const socialLinks = [
+        {
+          platform: 'GitHub',
+          link: 'https://github.com/GustavHansen99',
+          iconClass: 'fab fa-github'
+        },
+        {
+          platform: 'LinkedIn',
+          link: 'https://linkedin.com/in/gustav-l-k-hansen-0b175316a',
+          iconClass: 'fab fa-linkedin'
+        },
+        {
+          platform: 'Twitter/X',
+          link: 'https://x.com/TheGustavHansen',
+          iconClass: 'fab fa-twitter'
+        },
+        {
+            platform: 'Mail',
+            link: 'mailto:gustav5hansen5@gmail.com',
+            iconClass: 'fas fa-envelope'
+        }
+      ];
+  
+      // Function to append social media icons to the lead section
+      function appendSocialMediaIcons() {
+        const container = $('#social-media-icons');
+        let socialMediaHtml = '<div class="social-icons">';
+  
+        socialLinks.forEach(link => {
+          socialMediaHtml += `
+            <a href="${link.link}" target="_blank" class="social-icon">
+              <i class="${link.iconClass}"></i>
+            </a>
+          `;
+        });
+  
+        socialMediaHtml += '</div>';
+        container.html(socialMediaHtml);
+      }
+  
+      // Call the function to append the social media icons
+      appendSocialMediaIcons();
+
+    // Timeline animation function
+    function animateTimeline() {
+        const timelinePoints = document.querySelectorAll('.vtimeline-point');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, {
+            threshold: 0.2, // 20% of the element must be visible
+            rootMargin: '0px 0px -50px 0px' // Slightly offset trigger point
+        });
+
+        timelinePoints.forEach(point => {
+            observer.observe(point);
+        });
+    }
+
+    // Initialize animations when document is ready
+    $(document).ready(function() {
+        animateTimeline();
+        
+        // Re-run animation check on scroll (for dynamic content)
+        $(window).on('scroll', function() {
+            requestAnimationFrame(animateTimeline);
+        });
+        initProjectCarousel();
+    });
+
+    // Project carousel navigation
+    function initProjectCarousel() {
+        const wrapper = document.querySelector('.projects-wrapper');
+        const prevBtn = document.querySelector('.nav-arrow.prev');
+        const nextBtn = document.querySelector('.nav-arrow.next');
+        const scrollAmount = 370; // card width + gap
+
+        if (wrapper && prevBtn && nextBtn) {
+            // Hide prev button initially
+            prevBtn.style.opacity = '0';
+            prevBtn.style.pointerEvents = 'none';
+
+            // Update arrow visibility
+            const updateArrows = () => {
+                const isAtStart = wrapper.scrollLeft === 0;
+                const isAtEnd = wrapper.scrollLeft >= (wrapper.scrollWidth - wrapper.clientWidth - 10);
+                
+                prevBtn.style.opacity = isAtStart ? '0' : '1';
+                prevBtn.style.pointerEvents = isAtStart ? 'none' : 'auto';
+                
+                nextBtn.style.opacity = isAtEnd ? '0' : '1';
+                nextBtn.style.pointerEvents = isAtEnd ? 'none' : 'auto';
+            };
+
+            // Scroll handlers
+            prevBtn.addEventListener('click', () => {
+                wrapper.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                wrapper.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Update arrows on scroll
+            wrapper.addEventListener('scroll', updateArrows);
+            
+            // Initial arrow check
+            updateArrows();
+        }
+    }
 
 })(jQuery);
